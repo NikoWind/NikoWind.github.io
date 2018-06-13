@@ -1,0 +1,57 @@
+.story {
+  width: 1020px;
+  min-height: 712px;
+  height: 100%;
+}
+.story .aboutus {
+  position: absolute;
+  margin-top: -165px;
+  margin-bottom: 35px;
+  margin-left: -25px;
+}
+.story .tell-story {
+  width: 940px;
+  height: 105px;
+  line-height: 30px;
+  padding: 40px;
+  background: #f7f7f7;
+  margin-top: 200px;
+  font-size: 14px;
+  color: #4d4d4d;
+}
+.story .team {
+  position: absolute;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-left: -25px;
+}
+.story .header-box {
+  width: 1020px;
+  height: 400px;
+  margin-top: 200px;
+}
+.story .header-box .header {
+  position: absolute;
+  margin-top: -70px;
+  margin-left: -70px;
+}
+.story .header-info {
+  padding-top: 55px;
+  padding-left: 230px;
+}
+.story .header-info > p {
+  line-height: 45px;
+}
+.story .header-info .header-position {
+  font-size: 22px;
+  color: #333;
+}
+.story .header-info .header-name {
+  font-size: 30px;
+  color: #333;
+  margin-right: 30px;
+}
+.story .header-info .header-duty {
+  font-size: 18px;
+  color: #333;
+}

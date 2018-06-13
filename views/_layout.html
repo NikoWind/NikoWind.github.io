@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="description" content="奥芬蜂巢健康管理平台"/>
+    <meta name="keywords" content="奥芬蜂巢,健康管理平台"/>
+    {% block head %}
+    <title>首页</title>
+    {% endblock %}
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.tabslet.min.js"></script>
+    <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js?"></script>
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+    <div style="background:#ffd138">您正在使用低版本IE浏览器，在本页面的显示效果可能有差异，建议您升级您的浏览器，或者使用谷歌、360、火狐等浏览器！</div>
+    <![endif]-->
+    <div class="page-header">
+      {% include "_header.html" %}
+    </div>
+    <div class="page-content">
+    {% block content %}
+        CONTENT
+    {% endblock %}
+    </div>
+    <div class="page-footer">
+      {% include "_footer.html" %}
+    </div>
+    <script type="text/javascript">
+    $youziku.load("body", "db24ccbb4bf941b19cd5b13b83efd137", "PingFangSC");
+    $youziku.draw();
+    </script>
+</body>
+
+</html>

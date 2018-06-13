@@ -1,0 +1,68 @@
+{% extends "_layout.html" %}
+{% block head %}
+<title>奥芬蜂巢健康管理平台</title>
+<link rel="shortcut icon" href="/image/homepage/offen.ico"/>
+<link href="/css/index.css" rel="stylesheet" />
+{% endblock %}
+{% block content %}
+    <div class="home-content">
+        <div class="home-content-item1" id="item1">
+            <a name="1" class="item-title"><img src="/image/homepage/item1.png"/></a>
+                <div class="item-poc">
+                    <img src="/image/homepage/poc1.png" class="item-poc1"/>
+                    <img src="/image/homepage/poc2.png" class="item-poc2"/>
+                    <img src="/image/homepage/poc3.png" class="item-poc3"/>
+                    <img src="/image/homepage/poc4.png" class="item-poc4"/>
+                    <img src="/image/homepage/poc5.png" class="item-poc7"/>
+                    <img src="/image/homepage/poc6.png" class="item-poc5"/>
+                    <img src="/image/homepage/poc7.png" class="item-poc6"/>
+                </div>
+        </div>
+        <div class="home-content-item2" id="item2">
+            <a name="2" class="item-title"><img src="/image/homepage/item2.png"/></a>
+            <ul class="advantage">
+               <li class="advantage-li">
+                <p class="advantage-weight">专业的互联网+健康服务平台</p>
+                <p>奥芬 HDMP</p>
+                <p>医健宝</p>
+                <p>医盟通</p>
+               </li>
+               <li class="advantage-li advantage-li1">
+                <p class="advantage-weight">政策与协会支持</p>
+                <p>中国电子商务协会</p>
+                <p>中国营养保健品协会</p>
+                <p>北京医学奖励基金会</p>
+               </li>
+               <li class="advantage-li">
+                <p class="advantage-weight">完整的商业服务</p>
+                <p>多维解决方案</p>
+                <p>技术支持</p>
+                <p>培训体系</p>
+                <p>医疗资源</p>
+               </li>
+            </ul>
+        </div>
+        <div class="home-content-item3" id="item3">
+            <a name="3" class="item-title"><img src="/image/homepage/item3.png"/></a>
+                <ul class="sence">
+                    <li class="sence1"><em><img src="/image/homepage/sence1.png" class="item-icon"/></em><span>门店组织管理</span></li>
+                    <li class="sence1"><em><img src="/image/homepage/sence2.png" class="item-icon"/></em><span>健康微商城</span></li>
+                    <li class="sence1"><em><img src="/image/homepage/sence3.png" class="item-icon"/></em><span>预约&服务划扣</span></li>
+                    <li class="sence1"><em><img src="/image/homepage/sence4.png" class="item-icon"/></em><span>公众号管理</span></li>
+                    <li class="sence1"><em><img src="/image/homepage/sence5.png" class="item-icon"/></em><span>市场营销工具</span></li>
+                    <li class="sence1"><em><img src="/image/homepage/sence6.png" class="item-icon"/></em><span>代客下单</span></li>
+                    <li class="sence1"><em><img src="/image/homepage/sence7.png" class="item-icon"/></em><span>客户会员管理</span></li>
+                    <li class="sence1"><em><img src="/image/homepage/sence8.png" class="item-icon"/></em><span>财务管理</span></li>
+                    <li class="sence1"><em><img src="/image/homepage/sence9.png" class="item-icon"/></em><span>电子健康档案</span></li>
+                </ul>
+        </div>
+        <script type="text/javascript" src="/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/index.js"></script>
+        <script type="text/javascript" src="/js/roll.js"></script>
+        <script>  
+            function scroll(id) {  
+            $("#" + id).HoverTreeScroll(800);  
+            }  
+        </script>  
+    </div>
+{% endblock %}

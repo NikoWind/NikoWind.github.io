@@ -1,0 +1,49 @@
+{% extends "_layout.html" %}
+{% block head %}
+<title>奥芬蜂巢健康管理平台</title>
+<link rel="shortcut icon" href="/image/homepage/offen.ico"/>
+<link href="/css/news-detail1.css" rel="stylesheet" />
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="js/jquery.tabslet.min.js"></script>
+<script type="text/javascript" src="/js/tab.js"></script>
+{% endblock %}
+{% block header %}
+<ul class="homemenu-list">
+    <li>我们的故事</li>
+    <li>新闻动态</li>
+    <li>关于我们</li>
+</ul>
+{% endblock %}
+{% block content %}
+    <div class="tabs">
+    <ul class="tabbox">
+		<li class="tab"><a href="/about-us#story">我们的故事</a></li>
+		<li class="tab"><a href="/about-us#news">新闻动态</a></li>
+		<li class="tab"><a href="/about-us#contact">联系我们</a></li>
+	</ul>
+    <div id="tab-1">{% include "commonaboutus.html" %}</div>
+	<div id='tab-2'>
+        <div class="news-detail">
+                    <img src="/image/homepage/detail.png" class="detail-img"/>
+                    <p class="detail-title">奥芬健康跨年私享会在京成功召开 医殿堂“经典100工程”杨帆起航</p>
+                    <p class="detail-time">2017-01-10</p>
+                    <p>2017年1月7日，《奥芬健康跨年私享会暨奥芬盈科医殿堂经典100工程“十城联动”启航仪式》在北京港中旅维景国际大酒店成功召开。本次会议由首都名医俱乐部、首医健康财富联盟及北京奥芬盈科健康科技股份有限公司联合举办。
+</p>                
+                    <p>会上，来自全国各地的健康、互联网、医疗界领域高端人士针对互联网+健康管理”、“互联网医疗”等主题内容进行了专题演讲和探讨，并就如何打造中国最大的“互联网+健康管理金标准生态平台”及“医殿堂经典100项目”进行了分享。</p>
+                    <img src="/image/homepage/detail1.png" class="detail1-img"/>
+                    <p>首先，北京奥芬盈科董事长、首都名医俱乐部董事长边放、首医健康财富联盟主席李强为活动致辞。致辞表示健康管理对于精英人士的重要性，健康管理的多种途径和创新模式，说明奥芬盈科医殿堂就是专门为高端人士打造的以医疗健康管理服务为核心的O2O健康生态平台。
+</p>
+                    <p>在会议主题演讲环节，首先，奥芬健康董助、常务副总裁白磊在此次私享会上为大家带来了精彩的演讲，从自身专业领域出发，以独特的视角，围绕互联网业态发展、大数据云平台、年度互联网事件、互联网与企业的紧密关联等展开了分享，演讲结束后让与会者深感意犹未尽。</p>
+                    <p>随后，奥芬健康研发中心总经理何泰仁在会上为大家说明了奥芬健康项目整合O2O健康生态平台运营整体环境和特色，简单介绍了线上平台技术支持和线下产品的结合。
+</p>
+                    <p>紧接着中国电子商务协会健康产业委员会秘书长、中国电子商务协会常务理事、中国营养保健食品协会副会长、奥芬集团董事长、奥芬健康创始人郑健先生在会上就本次会议主题“健康引领 财富增值”深入展开了分享和演讲。不仅从中国传统文化角度对健康、成功、财富之间的关系进行了见解独到的剖析，也针对互联网+健康管理金标准生态平台进行了阐述和介绍。演讲后半段郑健先生提到即将携手全国各地致力于互联网+健康大产业的优秀合作伙伴，共同用爱传承责任，用心创造信任，用创新模式打造VIP精英健康管理生活经济圈。
+</p>                
+                    <p>在本次会议最后，北京奥芬盈科董事长、首都名医俱乐部董事长边放先生、首医健康财富联盟主席李强先生与10家项目合作代表企业进行现场签署战略合作协议。这象征着奥芬盈科医殿堂经典100项目“十城联动”项目正式扬帆起航。本次奥芬健康跨年私享会在部分与会者进行合影后圆满结束。
+</p>
+                    <p class="last-info">用爱传承责任，用心创造信任。奥芬健康一直秉承行业标准，从成立至今一直坚持“让关爱和维护健康变得更简单“的理念，致力于打造专业的”互联网+健康“服务平台。在2017年新年伊始，奥芬健康依然步履坚定，将全力缔造全国领先的健康产业O2O生态平台，引领行业前行。奥芬盈科也将致力于打造中国最大的“互联网+健康管理金标准生态平台”！借助冬奥万亩健康基地，携手全国各地有健康服务资源的合作伙伴，共同开展“万亩基地+互联网平台+经典100门店计划”。
+</p>
+                </div>
+    </div>
+    <div id="tab-3">{% include "commoncontact.html" %}</div>
+</div>
+{% endblock %}

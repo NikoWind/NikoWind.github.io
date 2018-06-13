@@ -1,0 +1,57 @@
+<div class="header-con">
+    <div class="header-nav" id="nav">
+        <img src="/image/homepage/logo.png"/ class="logo-img">
+        <ul class="list-nav">
+        {% for page in pages %}
+            <li><a page="{{page.id}}" href="{{ page.url }}" class="nav nav-page">{{ page.name }}</a></li>
+        {% endfor %}
+        </ul>
+        {% for page in pages %}
+        <ul page="{{page.id}}" class="nav-list nav-menu" style="{{ "display:none" if page.id != currentPage }} ">
+            {% for item in page.menu %}
+            <li><a href="{{ item.url }}">{{item.name}}</a></li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+        <a class="header-login" href="http://poc.offencube.com">门店登录</a>
+        <a class="header-apply" href="http://agent.offencube.com">登录医城汇</a>
+    </div>
+    <div class="header-banner"><div class="header-banner-con"><img src="/image/homepage/banner.png" class="banner"></div></div>
+</div>
+<script type="text/javascript">
+    var currentPage = "{{ currentPage }}"
+    $(document).ready(function(){
+        var $pages = $('.nav-page')
+        var $menuArray =  $('.nav-menu')
+
+        function getMenu(pageId){
+            var menu = null
+            $menuArray.each(function(){
+                var id = $(this).attr('page')
+                if(pageId == id) {
+                    menu = this
+                }
+            })
+            return menu
+        }
+
+        function showMunu(pageId){
+             $menuArray.each(function(){
+                $(this).hide()
+            })
+            var menu = getMenu(pageId)
+            $(menu).show()
+        }
+
+        $pages.each(function(){
+            $(this).mouseover(function(){
+                var pageId = $(this).attr('page')
+                showMunu(pageId)
+            })
+            $(this).mouseout(function(){
+                showMunu(currentPage)
+            })
+        })
+    })
+</script>
+

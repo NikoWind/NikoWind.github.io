@@ -1,0 +1,47 @@
+{% extends "_layout.html" %}
+{% block head %}
+<title>奥芬蜂巢健康管理平台</title>
+<link rel="shortcut icon" href="/image/homepage/offen.ico"/>
+<link href="/css/about-us.css" rel="stylesheet" />
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="js/jquery.tabslet.min.js"></script>
+<script type="text/javascript" src="/js/tab.js"></script>
+{% endblock %}
+{% block content %}
+<div class="tabs">
+    <ul class="tabbox">
+		<li class="tab"><a href="#tab-1">我们的故事</a></li>
+		<li class="tab"><a href="#tab-2">新闻动态</a></li>
+		<li class="tab"><a href="#tab-3">联系我们</a></li>
+	</ul>
+	<div id='tab-1'>{% include "commonaboutus.html" %}</div>
+	<div id='tab-2'>
+        <div class="news">
+                    <img src="/image/homepage/trends.png"/ class="trends">
+                    <ul class="news-box">
+                        <li class="news-list"><a href="/news-detail1#trends"><img src="/image/homepage/news1.png" class="news-img"/></a>
+                            <div class="news-info">
+                            <p>奥芬健康跨年私享会在京成功召开 医殿堂“经典100工程”扬<br>帆起航</p>
+                            <p class="news-time">2017-01-10</p>
+                            </div>
+                        </li>
+                        <li class="news-list news-list1">
+                            <a href="/news-detail2#trends"><img src="/image/homepage/news2.png" class="news-img"/></a>
+                            <div class="news-info">
+                            <p>中国电子商务协会健康产业委员会“互联网+医养结合”智慧<br>养老年度创新论坛在西安顺利召开</p>
+                            <p class="news-time">2016-11-13</p>
+                            </div>
+                        </li>
+                        <li class="news-list news-list2">
+                            <a href="/news-detail3#trends"><img src="/image/homepage/news3.png" class="news-img"/></a>
+                            <div class="news-info">
+                            <p>首都名医俱乐部“全国经典100健康财富分享会议”在京顺利<br>召开</p>
+                            <p class="news-time">2016-11-15</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    </div>
+	<div id='tab-3'>{% include "commoncontact.html" %}</div>
+</div>
+{% endblock %}

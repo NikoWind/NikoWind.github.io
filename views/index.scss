@@ -1,0 +1,117 @@
+@import 'base';
+.home-content {
+  width: 1020px;
+  height: auto;
+  margin: auto;
+}
+.home-content-item1 {
+  height: 855px;
+  position: relative;
+}
+.item-title {
+  display: inline-block;
+  width: 155px;
+  height: 130px;
+  padding-top: 15px;
+  margin-left: -25px;
+}
+.item-poc {
+  position: relative;
+  width: 915px;
+  height: 695px;
+  margin-left: 46px;
+}
+.item-poc > img {
+  cursor: pointer;
+  position: absolute;
+}
+.item-poc2 {
+  margin-top: 110px;
+  margin-left: 195px;
+}
+.item-poc3 {
+  margin-left: 390px;
+}
+.item-poc4 {
+  margin-top: 330px;
+  margin-left: 195px;
+}
+.item-poc5 {
+  margin-left: 390px;
+  margin-top: 220px;
+}
+.item-poc6 {
+  margin-top: 440px;
+}
+.item-poc7 {
+  margin-left: 584px;
+  margin-top: 330px;
+}
+.home-content-item2 {
+  width: 1020px;
+  height: 380px;
+  margin: auto;
+}
+.advantage {
+  margin-top: 30px;
+  list-style-type: none;
+  padding: 0;
+}
+.advantage-li {
+  position: relative;
+  float: left;
+  font-size: 15px;
+  color: #7f7f7f;
+  line-height: 30px;
+}
+.advantage > li.color {
+  color: #0ed67a;
+}
+.advantage-li .advantage-weight {
+  font-size: 23px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.advantage-li .advantage-weight.color {
+  color: #0ed67a;
+}
+.advantage-li1 {
+  margin-left: 51px;
+  margin-right: 180px;
+}
+.home-content-item3 {
+  position: relative;
+  height: 480px;
+  width: 1020px;
+  margin: auto;
+}
+.sence {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  position: relative;
+}
+.sence > li {
+  position: relative;
+  width: 340px;
+  height: auto;
+  min-height: 80px;
+  line-height: 30px;
+  font-size: 19px;
+  color: #4d4d4d;
+  font-weight: bold;
+  float: left;
+  overflow: hidden;
+}
+.sence > li .item-icon {
+  position: absolute;
+  margin-left: -20px;
+  width: 80px;
+}
+.sence1 > span {
+  position: absolute;
+  margin-top: 28px;
+  padding-left: 60px;
+}

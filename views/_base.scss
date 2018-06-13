@@ -1,0 +1,192 @@
+@import 'normalize';
+body {
+  font: 14px '-apple-system', 'BlinkMacSystemFont', 'PingFang SC', 'Helvetica Neue', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', 'Roboto', sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+}
+.page-header {
+  height: 640px;
+}
+a {
+  text-decoration: none;
+}
+.page-content {
+  height: auto;
+}
+
+.page-footer {
+  height: 450px;
+  background: #f7f7f7;
+}
+.header-con {
+  position: relative;
+  height: 99px;
+  border-bottom: 1px solid #f2f2f7;
+}
+.header-nav {
+  position: relative;
+  width: 1020px;
+  height: 100px;
+  margin: auto;
+}
+.logo-img {
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  margin-top: 20px;
+  vertical-align: bottom;
+}
+.header-con .header-nav .list-nav {
+  position: absolute;
+  margin-top: -80px;
+  margin-left: 230px;
+}
+.header-con .header-nav .list-nav > li {
+  float: left;
+}
+.header-con .header-nav .list-nav > li > a.nav {
+  display: inline-block;
+  margin-top: 0;
+  height: 99px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 14px;
+  color: #4d4d4d;
+  font-weight: bold;
+  line-height: 99px;
+}
+.header-con .nav-list {
+  //position: fixed;
+  line-height: 40px;
+  width: 1020px;
+  height: 40px;
+  margin-top: 19px;
+}
+.header-con .nav-list > li {
+  float: left;
+  margin-right: 50px;
+}
+.header-con .nav-list > li > a {
+  font-size: 13px;
+  color: #7f7f7f;
+  display: inline-block;
+  height: 40px;
+}
+.header-login {
+  display: inline-block;
+  width: 100px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  background: #0ed67a;
+  float: right;
+  margin-top: -110px;
+  box-shadow: 0px 10px 30px rgba(0, 204, 136, 0.4);
+  cursor: pointer;
+}
+.header-apply {
+  display: inline-block;
+  width: 100px;
+  height: 41px;
+  text-align: center;
+  line-height: 41px;
+  font-size: 13px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  background: #ff772b;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr = #ff952b, endColorstr = #ff772b);
+  background: linear-gradient(120deg, rgb(255, 149, 43) 100%, rgb(255, 119, 43) 0%);
+  box-shadow: 0px 10px 30px rgba(255, 149, 43, 0.4);
+  float: right;
+  cursor: pointer;
+  margin-top: -40px;
+}
+.header-banner {
+  margin-top: 40px;
+  height: 500px;
+  clear: left;
+  width: 100%;
+  min-width: 1020px;
+  height: 500px;
+  overflow: hidden;
+  background: #ffd138;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr = #ffd138, endColorstr = #ffb139);
+  background: linear-gradient(120deg, rgb(255, 209, 56) 0%, rgb(255, 177, 57) 100%);
+}
+.header-banner-con {
+  perspective: 500px;
+  width: 1020px;
+  margin: auto;
+}
+.footer-con {
+  width: 1020px;
+  height: 450px;
+  margin: auto;
+}
+.footer-info {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.info-list {
+  width: 150px;
+  float: left;
+  font-size: 13px;
+}
+.info-list1 {
+  width: 285px;
+}
+.info-list > div {
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: #808080;
+}
+.info-list > div > a {
+  color: #808080;
+}
+.info-list .info-listweight {
+  margin-bottom: 45px;
+  margin-top: 60px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+.info-list .info-listweight > a {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+.QR-code {
+  float: right;
+  width: 129px;
+  height: 129px;
+  margin-top: 60px;
+}
+.QR-code > img {
+  width: 100%;
+}
+.QR-code > p {
+  text-align: center;
+  font-size: 13px;
+  color: #808080;
+  margin-top: 20px;
+}
+.bottom-info {
+  clear: both;
+  text-align: center;
+  font-size: 14px;
+  color: #7f7f7f;
+  padding-top: 45px;
+}
+.bottom-info > div {
+  margin-bottom: 15px;
+}
